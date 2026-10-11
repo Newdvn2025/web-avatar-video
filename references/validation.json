@@ -1,0 +1,12 @@
+{
+  "frames": {
+    "orbit": 145,
+    "action-1": 73,
+    "action-2": 73,
+    "action-3": 73
+  },
+  "downloadMiB": 38.06,
+  "scriptSmokeTest": "4 frames extracted, segmented and encoded successfully",
+  "browser": "desktop mouse and scroll demo visually checked; no console errors",
+  "limits": "No real 3D rig; angular mapping; decoded memory requires production optimization"
+}
