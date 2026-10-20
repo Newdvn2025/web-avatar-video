@@ -7,6 +7,22 @@ description: 将定稿角色图和AI动作视频制作成网页交互人物，�
 
 这是视频帧驱动的 2.5D 展示，角色可以有3D渲染外观，但交付物不含真实3D模型、骨骼或任意角度求解。先说明这个边界，再沿用户需要完成制作。
 
+## 作者、源码与安装
+
+作者：净弘（AIGCHONG）。
+
+GitHub：https://github.com/Newdvn2025/web-avatar-video
+
+在 Codex 中安装：
+
+```sh
+git clone https://github.com/Newdvn2025/web-avatar-video.git ~/.codex/skills/web-avatar-video
+```
+
+已有同名目录时先检查内容，避免覆盖。其他支持 Skill 的助手可将完整仓库复制到对应的 Skill 目录，保留根目录 SKILL.md 与 references、scripts、assets。
+
+安装后对助手说：“使用 $web-avatar-video，带我从角色图开始，一步一步制作网页交互人物。”
+
 ## 提示词交付
 
 读取 [全流程工具箱](references/prompts.md)，按用户所处阶段选择模板。用变量表收集已有需求，缺省采用示例值；对外生成前输出填好的完整最终提示词，不留花括号，不让用户拼接替换。时长变化需同步改整段时间表。区分给图像AI、视频AI和编程助手的指令。保留用户定稿角色与授权范围。
@@ -21,7 +37,7 @@ description: 将定稿角色图和AI动作视频制作成网页交互人物，�
 6. **滚动动作**：有需求时分别生成指向、展示、挥手。复用同一角色图，统一镜头。按滚动进度选帧而非自动播放，向上滚动可倒放。章节换片须检查姿态跳变。
 7. **验收交付**：验证上下左右、四个斜方向、跨左侧环路、中心回正、倒滚、移动端和减少动态偏好。检查透明边缘、小点、闪烁、资源404和加载体积。保存截图、原始素材清单、使用的提示词、实际帧映射和局限。提供可运行Demo及启动方式。
 
-## 不重复本次失误
+## 制作注意事项
 
 - 直接描述头、眼球、虹膜、瞳孔、眼睑运动。避免“追踪一个目标”等容易被画成实体的正向叙述；画面只含人物和背景。
 - 每次给出完整最终提示词，检查“不动”与“轻微运动”等前后矛盾，不让用户手动替换片段。
@@ -35,5 +51,4 @@ description: 将定稿角色图和AI动作视频制作成网页交互人物，�
 - 用户逐步教程：[guide.md](references/guide.md)
 - 可复制提示词：[prompts.md](references/prompts.md)
 - 脚本、映射与排错：[implementation.md](references/implementation.md)
-- 本次复盘和小红书选题框架：[review.md](references/review.md)
 - 独立Demo：`assets/demo/index.html`（HTTP服务器运行；素材仅作本次用户案例演示）

@@ -4,11 +4,11 @@
 
 **一张角色图，一条环绕视频，一个能跟着鼠标转头的网页人物。**
 
-由静弘（AIGCHONG）整理的网页交互人物 Skill，将角色图、AI 动作视频与网页交互串成一套完整流程。包含逐步教程、可直接复制的提示词、透明背景处理脚本，以及可独立运行的深色奇幻赛博风 Demo：鼠标控制角色转头方向，页面滚动控制指向、展示和挥手动作。
+由净弘（AIGCHONG）整理的网页交互人物 Skill，将角色图、AI 动作视频与网页交互串成一套完整流程。包含逐步教程、可直接复制的提示词、透明背景处理脚本，以及可独立运行的深色奇幻赛博风 Demo：鼠标控制角色转头方向，页面滚动控制指向、展示和挥手动作。
 
 这是 **视频帧驱动的 2.5D 展示**，不是骨骼绑定的3D模型。适合个人网站、作品集和互动介绍页。
 
-[在线 Demo](https://newdvn2025.github.io/web-avatar-video/assets/demo/) · [逐步教程](references/guide.md) · [完整提示词](references/prompts.md) · [制作复盘](references/review.md)
+[在线 Demo](https://newdvn2025.github.io/web-avatar-video/assets/demo/) · [逐步教程](references/guide.md) · [完整提示词](references/prompts.md)
 
 ## 你可以做出什么
 
@@ -75,7 +75,6 @@ SKILL.md                    技能入口
 references/guide.md         用户逐步教程
 references/prompts.md       完整可复制提示词
 references/implementation.md 参数、映射、排错与性能
-references/review.md        制作复盘与小红书内容提纲
 scripts/prepare_frames.py   视频 → 透明 WebP
 scripts/matte_video.swift   macOS Vision 前景分割
 assets/demo/                可独立运行的赛博风示例
@@ -93,4 +92,4 @@ assets/demo/                可独立运行的赛博风示例
 
 代码、脚本与文档采用 [MIT License](LICENSE)。`assets/` 与参考截图中的人物素材、生成图和示例帧不包含在MIT授权中：可查看运行本Demo；对外使用或再分发时，请替换为自己的授权素材，或联系作者获得授权。
 
-作者：[静弘（AIGCHONG）](https://github.com/Newdvn2025)
+作者：[净弘（AIGCHONG）](https://github.com/Newdvn2025)
